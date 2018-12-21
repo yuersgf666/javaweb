@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+
+    <servlet>
+      <servlet-name>HServlet01</servlet-name>
+      <servlet-class>com.sgf.user.testJava.HServlet01</servlet-class>
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>HServlet01</servlet-name>
+    <url-pattern>/HServlet01</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UploadHandlerServlet</servlet-name>
+    <servlet-class>com.sgf.user.testJava.UploadHandlerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadHandlerServlet</servlet-name>
+    <url-pattern>/UploadHandlerServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListFileServlet</servlet-name>
+    <servlet-class>com.sgf.user.testJava.ListFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListFileServlet</servlet-name>
+    <url-pattern>/ListFileServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.sgf.user.testJava.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/DownloadServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BServlet</servlet-name>
+    <servlet-class>com.sgf.user.testJava.BServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BServlet</servlet-name>
+    <url-pattern>/BServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionServlet</servlet-name>
+    <servlet-class>com.sgf.user.servlet.SessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionServlet</servlet-name>
+    <url-pattern>/SessionServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>VerifyCodeServlet</servlet-name>
+    <servlet-class>com.sgf.user.servlet.VerifyCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerifyCodeServlet</servlet-name>
+    <url-pattern>/VerifyCodeServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegistServlet</servlet-name>
+    <servlet-class>com.sgf.user.servlet.RegistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistServlet</servlet-name>
+    <url-pattern>/RegistServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HServlet02</servlet-name>
+    <servlet-class>com.sgf.user.testJava.HServlet02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HServlet02</servlet-name>
+    <url-pattern>/HServlet02</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AjaxServlet</servlet-name>
+    <servlet-class>com.sgf.user.servlet.AjaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet</servlet-name>
+    <url-pattern>/AjaxServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AjaxServlet02</servlet-name>
+    <servlet-class>com.sgf.user.servlet.AjaxServlet02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet02</servlet-name>
+    <url-pattern>/AjaxServlet02</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ProvinceServlet</servlet-name>
+    <servlet-class>com.sgf.user.servlet.ProvinceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProvinceServlet</servlet-name>
+    <url-pattern>/ProvinceServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CityServlet</servlet-name>
+    <servlet-class>com.sgf.user.servlet.CityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityServlet</servlet-name>
+    <url-pattern>/CityServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>JsonServlet</servlet-name>
+    <servlet-class>com.sgf.user.servlet.JsonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JsonServlet</servlet-name>
+    <url-pattern>/JsonServlet</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>Filter01</filter-name>
+    <filter-class>com.sgf.user.filter.Filter01</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter01</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>Filterlian01</filter-name>
+    <filter-class>com.sgf.user.filter.Filterlian01</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filterlian01</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>Filterlian02</filter-name>
+    <filter-class>com.sgf.user.filter.Filterlian02</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filterlian02</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>Filterlian03</filter-name>
+    <filter-class>com.sgf.user.filter.Filterlian03</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filterlian03</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <display-name>IPFilter</display-name>
+    <filter-name>IPFilter</filter-name>
+    <filter-class>com.sgf.user.filter.IPFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>IPFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <welcome-file-list>
+    <welcome-file>/*.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
